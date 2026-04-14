@@ -5,7 +5,7 @@ import pandas as pd
 
 DATA_PATH = Path(__file__).parent.parent / "data"
 DATASET_WITH_SPLIT_CSV = DATA_PATH / "dataset_with_split.csv"
-IMAGE_PATHS = [
+IMAGES_PATHS = [
     DATA_PATH / "images_part1",
     DATA_PATH / "images_part2",
     DATA_PATH / "images_part3",
@@ -22,7 +22,7 @@ def create_directory_structure():
 
 def move_images_to_splits():
     image_map = {}
-    for image_dir in IMAGE_PATHS:
+    for image_dir in IMAGES_PATHS:
         for path in image_dir.iterdir():
             if path.is_file():
                 image_map[path.stem] = path
@@ -42,7 +42,7 @@ def move_images_to_splits():
 
 
 def delete_empty_directories():
-    for image_dir in IMAGE_PATHS:
+    for image_dir in IMAGES_PATHS:
         if not any(image_dir.iterdir()):
             os.rmdir(image_dir)
 
