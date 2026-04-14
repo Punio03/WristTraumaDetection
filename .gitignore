@@ -1,0 +1,9 @@
+data/images*
+data/folder_structure/pascalvoc*
+data/folder_structure/supervisely*
+data/folder_structure/yolov5*
+data/archive.zip
+data/dataset.csv
+data/dataset_with_split.csv
+data/patient_split.csv
+.venv*
