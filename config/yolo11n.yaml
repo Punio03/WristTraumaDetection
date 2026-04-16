@@ -1,0 +1,8 @@
+# 15.04.2026
+
+project_name: WristTraumaDetection
+run_name: yolo11n_default
+
+model:
+  weights: "yolo11n.pt"
+  # all_default

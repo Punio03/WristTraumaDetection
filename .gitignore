@@ -8,3 +8,4 @@ data/dataset_with_split.csv
 data/patient_split.csv
 data/dataset/
 .venv*
+*.pt
